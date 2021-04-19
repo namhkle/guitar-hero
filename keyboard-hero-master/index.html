@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Coda:400,800|Orbitron:400,700|Play:400,700|Quantico:400,700i|Rajdhani:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title></title>
+</head>
+<body>
+  <div id="landingPage">
+    <img id = "welcomeGuitar" src="images/guitar.jpg" class="letter">
+    <h1 id = "title">Guitar HERO</h1>
+    <h2>Click anywhere to continue</h2>
+  </div>
+  <img id="logo" src="http://i.imgur.com/n9dc8k6.png">
+  <div id="instructions">
+    <h1>How to Play</h1>
+    <p><br>1. Hold down a key amongst the 1-6 keys on your keyboard. <br>2. Wait for the matching notes to pass over the fretboard<br>3. Click the "Strum!" button with your mouse.<br>You lose HP when you mistime a strum, strum the wrong notes, or allow the notes to hit the bottom of the screen. </p>
+    <!-- <p>Hold down the 1-6 keys on your keyboard in correspondence to the notes traveling downwards on the page, and when they pass over the frets (numbered buttons), click the "Strum!" button with your mouse! If you successfully strum the note, you gain a point! If you fail to strum a note or mistime the strum, you lose HP!</p> -->
+    <p><!-- Normal mode: <br>--> You win when you get enough points, or lose when your HP depletes to 0.</p>
+    <!-- Future feature:  <p>Unlimited mode: <br> See how many points you can rack up before your HP depletes to 0!</p>
+    <span id="unlimited">(hold space during selection for unlimited mode)</span> -->
+    <h2>Choose a level:</h2>
+    <ul>
+      <li><a href="#" id="ez" style="color:lime">Easy</a></li>
+      <li><a href="#" id="med" style="color:yellow">Medium</a></li>
+      <li><a href="#" id="hard" style="color:orange">Hard</a></li>
+      <li><a href="#" id="exp" style="color:red">Expert</a></li>
+    </ul>
+  </div>
+  <div id="playZone">
+    <div id="leftAside">
+      <h1 id="hp"></h1>
+    </div>
+    <div id="fretBoard">
+      <div id="fret1" class="fret">
+        <button id="button1" class="fretButton">1</button>
+      </div>
+      <div id="fret2" class="fret">
+        <button id="button2" class="fretButton">2</button>
+      </div>
+      <div id="fret3" class="fret">
+        <button id="button3" class="fretButton">3</button>
+      </div>
+      <div id="fret4" class="fret">
+        <button id="button4" class="fretButton">4</button>
+      </div>
+      <div id="fret5" class="fret">
+        <button id="button5" class="fretButton">5</button>
+      </div>
+      <div id="fret6" class="fret">
+        <button id="button6" class="fretButton">6</button>
+      </div>
+    </div>
+    <div id="rightAside">
+      <button id="strum">Strum!</button>
+      <h1 id="score"></h1>
+    </div>
+  </div>
+  <div id="endPage">
+    <h1 id="winText"><span class="spacing">Congratulations!</span> You win!</h1>
+    <h1 id="loseText"><span class="spacing">Game over!</span> You lose!</h1>
+    <h2 id="flawless">FLAWLESS</h2>
+    <h2 id="difficulty"></h2>
+    <h2 id="endScore"></h2>
+    <h2 id="endHP"></h2>
+    <p>Click anywhere to play again</p>
+  </div>
+<script src="js/script.js"></script>
+</body>
+</html>
